@@ -8,9 +8,9 @@ public class SortUtils {
         int middle = low + (high - low) / 2;
         int middleElement = array[middle];
 
-        // Separate to two:
-        // First array contains all elements which GREATER than middle element
-        // Second array contains all elements which LESS than middle element
+        // Separate to two parts:
+        // First part contains all elements which GREATER than middle element
+        // Second part contains all elements which LESS than middle element
         int i = low, j = high;
         while (i <= j) {
             while (array[i] < middleElement) {
